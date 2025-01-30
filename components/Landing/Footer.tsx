@@ -25,12 +25,12 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center shadow-lg">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
                 <FaHeart className="w-7 h-7 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold bg-gradient-to-r from-rose-500 to-rose-600 bg-clip-text text-transparent">
-                  MediConnect
+                <span className="text-xl font-bold bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
+                  EyeLink
                 </span>
                 <span className="text-xs text-muted-foreground">
                   Healthcare Excellence
@@ -47,25 +47,25 @@ export default function Footer() {
             <div className="flex items-center gap-4">
               <a
                 href="#"
-                className="text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                className="text-muted-foreground hover:text-blue-500 transition-colors duration-200"
               >
                 <FaFacebookF className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                className="text-muted-foreground hover:text-blue-500 transition-colors duration-200"
               >
                 <FaTwitter className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                className="text-muted-foreground hover:text-blue-500 transition-colors duration-200"
               >
                 <FaInstagram className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                className="text-muted-foreground hover:text-blue-500 transition-colors duration-200"
               >
                 <FaLinkedinIn className="w-5 h-5" />
               </a>
@@ -75,52 +75,52 @@ export default function Footer() {
           {/* Medical Services */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <FaStethoscope className="w-5 h-5 text-rose-500" />
+              <FaStethoscope className="w-5 h-5 text-blue-500" />
               <h3 className="text-lg font-semibold">Medical Services</h3>
             </div>
             <ul className="grid grid-cols-1 gap-3">
               <li>
                 <Link
                   href="/soon"
-                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
                   Emergency Care
                 </Link>
               </li>
               <li>
                 <Link
                   href="/soon"
-                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
                   Primary Care
                 </Link>
               </li>
               <li>
                 <Link
                   href="/soon"
-                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
                   Specialist Consultations
                 </Link>
               </li>
               <li>
                 <Link
                   href="/soon"
-                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
                   Laboratory Services
                 </Link>
               </li>
               <li>
                 <Link
                   href="/soon"
-                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
                   Radiology & Imaging
                 </Link>
               </li>
@@ -130,52 +130,52 @@ export default function Footer() {
           {/* Patient Resources */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <FaUser className="w-5 h-5 text-rose-500" />
+              <FaUser className="w-5 h-5 text-blue-500" />
               <h3 className="text-lg font-semibold">Patient Resources</h3>
             </div>
             <ul className="grid grid-cols-1 gap-3">
               <li>
                 <Link
                   href="/auth"
-                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
                   Patient Portal
                 </Link>
               </li>
               <li>
                 <Link
                   href="/soon"
-                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
                   Find a Doctor
                 </Link>
               </li>
               <li>
                 <Link
                   href="/soon"
-                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
                   Medical Records
                 </Link>
               </li>
               <li>
                 <Link
                   href="/soon"
-                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
                   Insurance Information
                 </Link>
               </li>
               <li>
                 <Link
                   href="/soon"
-                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-rose-500"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
                   Patient Education
                 </Link>
               </li>
@@ -185,12 +185,12 @@ export default function Footer() {
           {/* Contact & Hours */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <FaFirstAid className="w-5 h-5 text-rose-500" />
+              <FaFirstAid className="w-5 h-5 text-blue-500" />
               <h3 className="text-lg font-semibold">Contact & Hours</h3>
             </div>
             <ul className="space-y-4">
               <li className="flex gap-3 text-sm text-muted-foreground">
-                <FaMapMarkerAlt className="w-5 h-5 text-rose-500 shrink-0" />
+                <FaMapMarkerAlt className="w-5 h-5 text-blue-500 shrink-0" />
                 <span>
                   123 Healthcare Avenue
                   <br />
@@ -200,29 +200,29 @@ export default function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                <FaPhone className="w-5 h-5 text-rose-500" />
+                <FaPhone className="w-5 h-5 text-blue-500" />
                 <a
                   href="tel:+1-800-MED-HELP"
-                  className="hover:text-rose-500 transition-colors duration-200"
+                  className="hover:text-blue-500 transition-colors duration-200"
                 >
                   1-800-MED-HELP
                 </a>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                <FaEnvelope className="w-5 h-5 text-rose-500" />
+                <FaEnvelope className="w-5 h-5 text-blue-500" />
                 <a
                   href="mailto:care@mediconnect.com"
-                  className="hover:text-rose-500 transition-colors duration-200"
+                  className="hover:text-blue-500 transition-colors duration-200"
                 >
                   care@mediconnect.com
                 </a>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                <FaCalendarAlt className="w-5 h-5 text-rose-500" />
+                <FaCalendarAlt className="w-5 h-5 text-blue-500" />
                 <div>
                   <p>Mon-Fri: 8:00 AM - 8:00 PM</p>
                   <p>Sat-Sun: 9:00 AM - 5:00 PM</p>
-                  <p className="text-rose-500 font-semibold">Emergency: 24/7</p>
+                  <p className="text-blue-500 font-semibold">Emergency: 24/7</p>
                 </div>
               </li>
             </ul>
@@ -238,19 +238,19 @@ export default function Footer() {
             <div className="flex flex-wrap justify-center md:justify-end gap-6">
               <Link
                 href="/privacy"
-                className="text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                className="text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
               >
                 Privacy Policy
               </Link>
               <Link
                 href="/terms"
-                className="text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                className="text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
               >
                 Terms of Service
               </Link>
               <Link
                 href="/accessibility"
-                className="text-sm text-muted-foreground hover:text-rose-500 transition-colors duration-200"
+                className="text-sm text-muted-foreground hover:text-blue-500 transition-colors duration-200"
               >
                 Accessibility
               </Link>
@@ -259,7 +259,7 @@ export default function Footer() {
         </div>
       </div>
       {/* Emergency Banner */}
-      <div className="w-full bg-rose-500 py-2">
+      <div className="w-full bg-blue-500 py-2">
         <div className="container mx-auto px-4">
           <div className="flex flex-col sm:flex-row justify-between items-center text-white">
             <div className="flex items-center gap-2">

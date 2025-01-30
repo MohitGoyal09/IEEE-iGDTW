@@ -45,7 +45,7 @@ export default function Hero() {
           </div>
           <div className="flex gap-6 flex-col items-center">
             <h1 className="text-5xl md:text-7xl max-w-3xl tracking-tighter text-center font-regular">
-              <span className="bg-gradient-to-r from-rose-500 to-rose-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
                 Your health journey begins with
               </span>
               <span className="relative flex w-full justify-center overflow-hidden text-center md:pb-4 md:pt-1">
@@ -76,7 +76,7 @@ export default function Hero() {
             <SearchForm />
             <p className="text-sm md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center mx-auto dark:text-gray-300">
               <span className="font-bold text-black italic dark:text-white">
-                MediConnect
+                Eyelink
               </span>{" "}
               reimagines healthcare with instant access to hospitals, AI-powered
               health assistance, and direct communication with medical pros—your

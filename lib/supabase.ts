@@ -1,7 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 
 // Hardcoded values (for development only)
-const supabaseUrl = "https://aghpwajpoveurwdgeidi.supabase.co";
+const supabaseUrl = "https://aghpwajpoveurwdgeidi.supabase.co"
 const supabaseAnonKey =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFnaHB3YWpwb3ZldXJ3ZGdlaWRpIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNTQ3NzMwOSwiZXhwIjoyMDUxMDUzMzA5fQ.HGWrNJcvr4TtrReN-z36aliQCQycUUseLoPt3pj3Ibc";
 

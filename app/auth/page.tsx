@@ -1,6 +1,14 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";console.log("User:", user);
+console.log("Profile:", profile);
+console.log("Loading:", loading);
+console.log("Messages:", messages);
+console.log("Input:", input);
+console.log("Is Loading:", isLoading);
+console.log("Scroll Area Ref:", scrollAreaRef);
+console.log("Show Direct Chat:", showDirectChat);
+console.log("Pending Question:", pendingQuestion);
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
