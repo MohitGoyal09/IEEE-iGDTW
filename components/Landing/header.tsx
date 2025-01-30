@@ -43,7 +43,7 @@ export default function Header() {
         },
         {
           title: "Book Appointment",
-          href: "/soon",
+          href: "/appointment"
         },
       ],
     },
@@ -57,7 +57,7 @@ export default function Header() {
         },
         {
           title: "FAQs",
-          href: "/soon",
+          href: "/faq",
         },
         {
           title: "Patient Education",
