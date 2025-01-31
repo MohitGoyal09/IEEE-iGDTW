@@ -1,14 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";console.log("User:", user);
-console.log("Profile:", profile);
-console.log("Loading:", loading);
-console.log("Messages:", messages);
-console.log("Input:", input);
-console.log("Is Loading:", isLoading);
-console.log("Scroll Area Ref:", scrollAreaRef);
-console.log("Show Direct Chat:", showDirectChat);
-console.log("Pending Question:", pendingQuestion);
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -102,7 +94,11 @@ const Navbar = ({ position, input = "", setInput, isLoading }: NavbarProps) => (
           >
             <Mic className="h-4 w-4" />
           </Button>
-          <Button type="submit" disabled={isLoading} size="icon">
+          <Button 
+            type="submit" 
+            disabled={isLoading} 
+            size="icon"
+          >
             <Send className="h-4 w-4" />
           </Button>
         </div>
@@ -112,7 +108,11 @@ const Navbar = ({ position, input = "", setInput, isLoading }: NavbarProps) => (
 );
 
 export default function Home() {
-  const { user, profile, loading } = useAuth();
+  const { user, profile, loading } = useAuth() as {
+    user: any; // Replace 'any' with your user type
+    profile: any; // Replace 'any' with your profile type
+    loading: boolean;
+  };
   const router = useRouter();
   const [messages, setMessages] = useState<Message[]>([
     {
@@ -230,7 +230,7 @@ export default function Home() {
         .from("direct_chats")
         .insert({
           user_id: user.id,
-          status: "active",
+          status: "active" as const,
           updated_at: new Date().toISOString(),
         })
         .select()
