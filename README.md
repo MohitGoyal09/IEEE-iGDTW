@@ -1,4 +1,4 @@
-# MediConnect
+# EyeLink
 
 AI-powered healthcare platform that streamlines patient care with personalized insights, secure data management, and 24/7 support - making quality healthcare more accessible and efficient."
 
@@ -6,10 +6,10 @@ AI-powered healthcare platform that streamlines patient care with personalized i
 ![Landing Page](image.png)
 
 ## Inspiration
-Let's face it - healthcare is broken. Doctors are overwhelmed, patients are frustrated with long wait times, and important health information gets lost in outdated systems. We built MediConnect because we believe everyone deserves better healthcare access. Our goal? Use modern technology to make healthcare work better for both patients and providers.
+Let's face it - healthcare is broken. Doctors are overwhelmed, patients are frustrated with long wait times, and important health information gets lost in outdated systems. We built EyeLink because we believe everyone deserves better healthcare access. Our goal? Use modern technology to make healthcare work better for both patients and providers.
 
 ## What it does
-Think of MediConnect as your healthcare command center:
+Think of EyeLink as your healthcare command center:
 * Get personalized health recommendations powered by AI
 * Manage all your medical records and appointments in one place
 * Message your healthcare team securely, anytime
@@ -50,12 +50,12 @@ This journey taught us a lot:
 * Building for scale is crucial in healthcare
 * Technology should enhance the human side of medicine
 
-## What's next for MediConnect
+## What's next for EyeLink
 We're just getting started! Coming up:
 * Connecting with existing health record systems
 * Smarter AI predictions for better health outcomes
 * Mobile apps for on-the-go healthcare
-* Taking MediConnect worldwide with multiple languages
+* Taking EyeLink worldwide with multiple languages
 * Adding support for health tracking devices
 * Building specialized tools for different medical fields
 

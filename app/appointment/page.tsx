@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import type { ReactElement } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -37,7 +38,7 @@ const appointmentSchema = z.object({
     .string()
     .nonempty("Contact number is required")
     .regex(/^\d{10}$/, "Contact number must be 10 digits"),
-  date: z.date().refine((date) => !isNaN(date.getTime()), {
+  date: z.date().refine((date: Date) => !isNaN(date.getTime()), {
     message: "Date is required",
   }),
   time: z.string().nonempty("Time is required"),
@@ -45,7 +46,14 @@ const appointmentSchema = z.object({
 
 type AppointmentFormInputs = z.infer<typeof appointmentSchema>;
 
-function AppointmentForm() {
+interface FieldProps {
+  field: {
+    onChange: (value: any) => void;
+    value: any;
+  };
+}
+
+function AppointmentForm(): ReactElement {
   const form = useForm<AppointmentFormInputs>({
     resolver: zodResolver(appointmentSchema),
     defaultValues: {
@@ -75,7 +83,7 @@ function AppointmentForm() {
         <FormField
           control={form.control}
           name="hospitalName"
-          render={({ field }) => (
+          render={({ field }: FieldProps) => (
             <FormItem>
               <FormLabel className="flex items-center gap-2">
                 <Hospital className="h-4 w-4" /> Hospital Name
@@ -95,7 +103,7 @@ function AppointmentForm() {
         <FormField
           control={form.control}
           name="modeOfAppointment"
-          render={({ field }) => (
+          render={({ field }: FieldProps) => (
             <FormItem>
               <FormLabel className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" /> Mode of Appointment
@@ -123,7 +131,7 @@ function AppointmentForm() {
         <FormField
           control={form.control}
           name="patientName"
-          render={({ field }) => (
+          render={({ field }: FieldProps) => (
             <FormItem>
               <FormLabel className="flex items-center gap-2">
                 {" "}
@@ -144,7 +152,7 @@ function AppointmentForm() {
         <FormField
           control={form.control}
           name="contactNumber"
-          render={({ field }) => (
+          render={({ field }: FieldProps) => (
             <FormItem>
               <FormLabel className="flex items-center gap-2">
                 {" "}
@@ -165,7 +173,7 @@ function AppointmentForm() {
         <FormField
           control={form.control}
           name="date"
-          render={({ field }) => (
+          render={({ field }: FieldProps) => (
             <FormItem className="flex flex-col">
               <FormLabel className="flex items-center gap-2">
                 {" "}
@@ -186,7 +194,7 @@ function AppointmentForm() {
         <FormField
           control={form.control}
           name="time"
-          render={({ field }) => (
+          render={({ field }: FieldProps) => (
             <FormItem>
               <FormLabel className="flex items-center gap-2">
                 {" "}
@@ -219,7 +227,7 @@ function AppointmentForm() {
   );
 }
 
-export default function Page() {
+export default function Page(): ReactElement {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-6">Schedule an Appointment</h1>
